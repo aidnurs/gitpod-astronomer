@@ -13,7 +13,7 @@ ports:
 tasks:
   - init: |
       pushd ap-airflow-onbuild
-      docker build . -t quay.io/astronomer/ap-airflow:2.0.0-buster-onbuild
+      docker build . -t quay.io/astronomer/ap-airflow:2.1.0-buster-onbuild
       popd
       docker pull postgres:12.2
     command: |
